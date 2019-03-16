@@ -65,10 +65,6 @@
     <CaptureTraceOutput>True</CaptureTraceOutput>
     <DeleteDeploymentDirectoryAfterTestRunIsComplete>False</DeleteDeploymentDirectoryAfterTestRunIsComplete>
     <DeploymentEnabled>False</DeploymentEnabled>
-    <Parallelize>
-      <Workers>4</Workers> <!-- level of parallelism-->
-      <Scope>ClassLevel</Scope> <!-- scope of parallelism-->
-    </Parallelize>
   </MSTest>
 
 </RunSettings>
