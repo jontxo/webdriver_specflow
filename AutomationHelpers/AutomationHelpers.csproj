@@ -154,9 +154,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AdditionalFiles Include="..\Shared\stylecop.json">
-      <Link>stylecop.json</Link>
-    </AdditionalFiles>
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>

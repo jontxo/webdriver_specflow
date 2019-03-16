@@ -171,9 +171,6 @@
     <Content Include="WebDriver\IEDriverServer.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <AdditionalFiles Include="..\Shared\stylecop.json">
-      <Link>stylecop.json</Link>
-    </AdditionalFiles>
     <None Include="App.ChromeAndroid7.config">
       <DependentUpon>App.config</DependentUpon>
       <IsTransformFile>true</IsTransformFile>

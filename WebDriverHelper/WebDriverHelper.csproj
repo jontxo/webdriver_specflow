@@ -146,9 +146,6 @@
     <Compile Include="WebDriverContext.cs" />
   </ItemGroup>
   <ItemGroup>
-    <AdditionalFiles Include="..\Shared\stylecop.json">
-      <Link>stylecop.json</Link>
-    </AdditionalFiles>
     <None Include="App.config" />
     <Compile Include="Extensions\ElementExtensions.WebTables.cs" />
     <None Include="packages.config" />
