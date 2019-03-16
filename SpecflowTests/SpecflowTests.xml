@@ -1,0 +1,253 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SpecflowTests</name>
+    </assembly>
+    <members>
+        <member name="T:Specflow.SpecflowContainer">
+            <summary>
+            The Specflow Container class.
+            </summary>
+        </member>
+        <member name="M:Specflow.SpecflowContainer.#ctor(BoDi.IObjectContainer,DataFactory.Configuration.ConfigurationParameters)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Specflow.SpecflowContainer"/> class.
+            </summary>
+            <param name="objectContainer">The object container.</param>
+            <param name="configurationParameters">The configuration parameters.</param>
+        </member>
+        <member name="P:Specflow.SpecflowContainer.ObjectContainer">
+            <summary>
+            Gets the object container.
+            </summary>
+            <value>
+            The object container.
+            </value>
+        </member>
+        <member name="T:Specflow.GlobalFunctions.Hooks">
+            <summary>
+            The Specflow Hooks.
+            </summary>
+        </member>
+        <member name="F:Specflow.GlobalFunctions.Hooks.configurationParameters">
+            <summary>
+            The configuration parameters.
+            </summary>
+        </member>
+        <member name="F:Specflow.GlobalFunctions.Hooks.objectContainer">
+            <summary>
+            The object container.
+            </summary>
+        </member>
+        <member name="M:Specflow.GlobalFunctions.Hooks.#ctor(BoDi.IObjectContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Specflow.GlobalFunctions.Hooks"/> class.
+            </summary>
+            <param name="objectContainer">The object container.</param>
+        </member>
+        <member name="P:Specflow.GlobalFunctions.Hooks.AppiumLocalService">
+            <summary>
+            Gets or sets appium local service.
+            </summary>
+        </member>
+        <member name="P:Specflow.GlobalFunctions.Hooks.WebDriverContextStatic">
+            <summary>
+            Gets or sets the webdriver.
+            </summary>
+        </member>
+        <member name="P:Specflow.GlobalFunctions.Hooks.TestContext">
+            <summary>
+            Gets or sets the test context.
+            </summary>
+        </member>
+        <member name="M:Specflow.GlobalFunctions.Hooks.GetWebDriver(BoDi.IObjectContainer,DataFactory.Configuration.ConfigurationParameters)">
+            <summary>
+            Gets the webdrivercontext.
+            </summary>
+            <param name="objectContainer">The configuration parameters object.</param>
+            <param name="configurationParameters">The object container object.</param>
+            <returns>The webDrvierContext object.</returns>
+        </member>
+        <member name="M:Specflow.GlobalFunctions.Hooks.LoadConfigurationParameters">
+            <summary>
+            Loads the configuration parameters.
+            </summary>
+        </member>
+        <member name="M:Specflow.GlobalFunctions.Hooks.StopAppium">
+            <summary>
+            Stop appium process.
+            </summary>
+        </member>
+        <member name="M:Specflow.GlobalFunctions.Hooks.CloseOrResetBrowser">
+            <summary>
+            The execute final steps.
+            </summary>
+        </member>
+        <member name="M:Specflow.GlobalFunctions.Hooks.LoadContainer">
+            <summary>
+            Loads the container.
+            </summary>
+        </member>
+        <member name="M:Specflow.GlobalFunctions.Hooks.TakeScreenshot">
+            <summary>
+            The take screenshot.
+            </summary>
+        </member>
+        <member name="T:Specflow.Steps.CommonSteps">
+            <summary>
+            The common steps.
+            </summary>
+        </member>
+        <member name="F:Specflow.Steps.CommonSteps.configurationParameters">
+            <summary>
+            The configuration parameters.
+            </summary>
+        </member>
+        <member name="F:Specflow.Steps.CommonSteps.objectContainer">
+            <summary>
+            The object container.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.CommonSteps.#ctor(BoDi.IObjectContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Specflow.Steps.CommonSteps"/> class.
+            </summary>
+            <param name="objectContainer">The object container.</param>
+        </member>
+        <member name="M:Specflow.Steps.CommonSteps.GivenINavigateToThePage(System.String)">
+            <summary>
+            The given i navigate to the page.
+            </summary>
+            <param name="appName">describe appName parameter on GivenINavigateToThePage.</param>
+        </member>
+        <member name="M:Specflow.Steps.CommonSteps.GetAppUrl(System.String)">
+            <summary>
+            The function gets the value of the url from the app.config class.
+            </summary>
+            <param name="app">Name of the app.</param>
+            <returns>Url of the app.</returns>
+        </member>
+        <member name="T:Specflow.Steps.DragAndDropSteps">
+            <summary>
+            The drag and drop steps.
+            </summary>
+        </member>
+        <member name="F:Specflow.Steps.DragAndDropSteps.dragAndDropPage">
+            <summary>
+            The drag and drop page.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.DragAndDropSteps.#ctor(BoDi.IObjectContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Specflow.Steps.DragAndDropSteps"/> class.
+            </summary>
+            <param name="objectContainer">The object container.</param>
+        </member>
+        <member name="M:Specflow.Steps.DragAndDropSteps.ThenTheResultShouldBeThatTheFirstElementIsMovedNearTheSecondElement">
+            <summary>
+            The then the result should be that the first element is moved near the second element.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.DragAndDropSteps.ThenTheResultShouldBeThatTheElementHasChangedHisPosition">
+            <summary>
+            The then the result should be that the element has changed his position.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.DragAndDropSteps.GivenIClickOnTheDraggableAndSortableButton">
+            <summary>
+            The given i click on the DRAGGABLE and sortable button.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.DragAndDropSteps.WhenIDragWebElementAndDropOverWebElementInThePage(System.String,System.String)">
+            <summary>
+            Whens the i drag web element and drop over web element in the page.
+            </summary>
+            <param name="webElementToBeMovedName">Name of the web element to be moved.</param>
+            <param name="targetWebElementName">Name of the target web element.</param>
+        </member>
+        <member name="M:Specflow.Steps.DragAndDropSteps.WhenIDragWebElementAndDropOtTheCoordinatesXy(System.String,System.Int32,System.Int32)">
+            <summary>
+            The when i drag web element and drop at the coordinates x e y in the page drag and drop page.
+            </summary>
+            <param name="webElementName">The web element name.</param>
+            <param name="positionX">The position x.</param>
+            <param name="positionY">The position y.</param>
+        </member>
+        <member name="T:Specflow.Steps.WebElementsChecksSteps">
+            <summary>
+            The WebElement check steps.
+            </summary>
+        </member>
+        <member name="F:Specflow.Steps.WebElementsChecksSteps.objectContainer">
+            <summary>
+            The object container.
+            </summary>
+        </member>
+        <member name="F:Specflow.Steps.WebElementsChecksSteps.webElementsChecksPage1">
+            <summary>
+            The web elements checks page1.
+            </summary>
+        </member>
+        <member name="F:Specflow.Steps.WebElementsChecksSteps.homePage">
+            <summary>
+            The home page.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.WebElementsChecksSteps.#ctor(BoDi.IObjectContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Specflow.Steps.WebElementsChecksSteps"/> class.
+            </summary>
+            <param name="objectContainer">The object container.</param>
+        </member>
+        <member name="M:Specflow.Steps.WebElementsChecksSteps.ThenTheColorOfTheElementElementShouldBeRed(System.String)">
+            <summary>
+            Then the color of the element element should be red.
+            </summary>
+            <param name="color">The color.</param>
+        </member>
+        <member name="M:Specflow.Steps.WebElementsChecksSteps.ThenTheElementHasLines(System.Int32)">
+            <summary>
+            Thens the element has lines.
+            </summary>
+            <param name="lineNumber">The line number.</param>
+        </member>
+        <member name="T:Specflow.Steps.WebTableSteps">
+            <summary>
+            The web table steps.
+            </summary>
+        </member>
+        <member name="F:Specflow.Steps.WebTableSteps.webTablePage">
+            <summary>
+            The web table page.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.WebTableSteps.#ctor(BoDi.IObjectContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Specflow.Steps.WebTableSteps"/> class.
+            </summary>
+            <param name="objectContainer">The object container.</param>
+        </member>
+        <member name="P:Specflow.Steps.WebTableSteps.ConfigurationParameters">
+            <summary>
+            Gets the Parameters.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.WebTableSteps.ThenAtTheTableShouldAppearTheValueAtTheStructureInTheColumn(System.String,System.String,System.String,System.String)">
+            <summary>
+            Get the information of a cell in a webTable from column and row.
+            </summary>
+            <param name="table">the table.</param>
+            <param name="value">the value.</param>
+            <param name="structure">the row.</param>
+            <param name="column">the column.</param>
+        </member>
+        <member name="M:Specflow.Steps.WebTableSteps.ThenICheckThatTheValuesOfTheColumnContainTheValueM(System.String,System.Int32,System.String)">
+            <summary>
+            at the webTable (.*) all the cells of the column (.*),  contain the value (.*).
+            </summary>
+            <param name="webTableName">The webTable name.</param>
+            <param name="column">the webTable column.</param>
+            <param name="value">The value.</param>
+        </member>
+    </members>
+</doc>

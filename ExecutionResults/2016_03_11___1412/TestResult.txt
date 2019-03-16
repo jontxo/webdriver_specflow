@@ -1,0 +1,21 @@
+***** SpecflowWebDriver.Features.ApiTestsFeature.JSONPlaceholderCannotObtainInfoOfAnUnexistingEmployee
+#10: Given I use the Chrome browser
+#11: Given a non existing user id
+-> #11: done: ApiTestsSteps.GivenAnUnexistingUserId() (0.0s)
+#11: When the information of this user is requested
+-> #11: done: ApiTestsSteps.WhenTheInformationOfThisUserIsRequested() (0.9s)
+#11: Then no user data is returned
+-> #11: done: ApiTestsSteps.ThenNoUserDataIsReturned() (1.9s)
+#11: Given a valid user id
+-> #11: done: ApiTestsSteps.GivenAValidUserId() (0.0s)
+#11: When the information of this user is requested
+***** SpecflowWebDriver.Features.ApiTestsFeature.JSONPlaceholderCanObtainAnExistingEmployeeInfo
+***** SpecflowWebDriver.Features.ApiTestsFeature.JSONPlaceholderReturnsAnErrorWithAnIncorrectRequest
+***** SpecflowWebDriver.Features.WebTablesFeature.CheckIfAColumnInATableHasAValueInAnyOfHisCells("Chrome","http://www.toolsqa.com/automation-pra...","WebTablePage","WebTableWrapper","3","m",System.String[])
+file:///C:\Users\ycuadra\AppData\Local\Temp\SpecflowExecutionResults2016_03_11\screenshot20160311141206.jpeg
+file:///C:\Users\ycuadra\AppData\Local\Temp\SpecflowExecutionResults2016_03_11\screenshot20160311141213.jpeg
+file:///C:\Users\ycuadra\AppData\Local\Temp\SpecflowExecutionResults2016_03_11\screenshot20160311141214.jpeg
+***** SpecflowWebDriver.Features.WebTablesFeature.CompareWebTableCellValueWithExpectedResult("Chrome","http://www.toolsqa.com/automation-pra...","WebTablePage","WebTableWrapper","2","3","601m",System.String[])
+file:///C:\Users\ycuadra\AppData\Local\Temp\SpecflowExecutionResults2016_03_11\screenshot20160311141224.jpeg
+file:///C:\Users\ycuadra\AppData\Local\Temp\SpecflowExecutionResults2016_03_11\screenshot20160311141229.jpeg
+file:///C:\Users\ycuadra\AppData\Local\Temp\SpecflowExecutionResults2016_03_11\screenshot20160311141229.jpeg

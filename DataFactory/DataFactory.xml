@@ -1,0 +1,502 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DataFactory</name>
+    </assembly>
+    <members>
+        <member name="T:DataFactory.Configuration.BrowsersConfiguration">
+            <summary>
+            The BrowsersConfiguration class.
+            </summary>
+        </member>
+        <member name="M:DataFactory.Configuration.BrowsersConfiguration.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DataFactory.Configuration.BrowsersConfiguration"/> class.
+            </summary>
+        </member>
+        <member name="P:DataFactory.Configuration.BrowsersConfiguration.ExecutionType">
+            <summary>
+            Gets or sets the type of the execution.
+            </summary>
+        </member>
+        <member name="P:DataFactory.Configuration.BrowsersConfiguration.Browser">
+            <summary>
+            Gets or sets the browser.
+            </summary>
+        </member>
+        <member name="P:DataFactory.Configuration.BrowsersConfiguration.ChromeBrowserCommandTimeout">
+            <summary>
+            Gets or sets the chrome browser command timeout.
+            </summary>
+        </member>
+        <member name="P:DataFactory.Configuration.BrowsersConfiguration.PageLoadTimeout">
+            <summary>
+            Gets or sets the page load timeout.
+            </summary>
+        </member>
+        <member name="P:DataFactory.Configuration.BrowsersConfiguration.AsynchronousJavascriptTimeout">
+            <summary>
+            Gets or sets the asynchronous javascript timeout.
+            </summary>
+        </member>
+        <member name="P:DataFactory.Configuration.BrowsersConfiguration.ImplicitWaitTimeout">
+            <summary>
+            Gets or sets the implicit wait timeout.
+            </summary>
+        </member>
+        <member name="P:DataFactory.Configuration.BrowsersConfiguration.ReuseBrowser">
+            <summary>
+            Gets or sets a value indicating whether [reuse browser].
+            </summary>
+        </member>
+        <member name="P:DataFactory.Configuration.BrowsersConfiguration.ChromeFileSessionPath">
+            <summary>
+            Gets or sets the chrome file session path.
+            </summary>
+        </member>
+        <member name="P:DataFactory.Configuration.BrowsersConfiguration.ChromeDriverPath">
+            <summary>
+            Gets or sets the chrome driver path.
+            </summary>
+        </member>
+        <member name="P:DataFactory.Configuration.BrowsersConfiguration.IeDriverPath">
+            <summary>
+            Gets or sets the ie driver path.
+            </summary>
+        </member>
+        <member name="P:DataFactory.Configuration.BrowsersConfiguration.FirefoxProcessName">
+            <summary>
+            Gets or sets the name of the firefox process.
+            </summary>
+        </member>
+        <member name="P:DataFactory.Configuration.BrowsersConfiguration.FirefoxDriverPath">
+            <summary>
+            Gets or sets the firefox driver path.
+            </summary>
+        </member>
+        <member name="P:DataFactory.Configuration.BrowsersConfiguration.FirefoxBinaryPath">
+            <summary>
+            Gets or sets the firefox binary path.
+            </summary>
+        </member>
+        <member name="P:DataFactory.Configuration.BrowsersConfiguration.SoftwareVersion">
+            <summary>
+            Gets or sets the software version.
+            </summary>
+        </member>
+        <member name="P:DataFactory.Configuration.BrowsersConfiguration.ChromeSessionId">
+            <summary>
+            Gets or sets the chrome session identifier.
+            </summary>
+        </member>
+        <member name="P:DataFactory.Configuration.BrowsersConfiguration.FirefoxSessionId">
+            <summary>
+            Gets or sets the firefox session identifier.
+            </summary>
+        </member>
+        <member name="P:DataFactory.Configuration.BrowsersConfiguration.InternetExplorerSessionId">
+            <summary>
+            Gets or sets the internet explorer session identifier.
+            </summary>
+        </member>
+        <member name="P:DataFactory.Configuration.BrowsersConfiguration.ChromeUrl">
+            <summary>
+            Gets or sets the chrome URL.
+            </summary>
+        </member>
+        <member name="P:DataFactory.Configuration.BrowsersConfiguration.FirefoxUrl">
+            <summary>
+            Gets or sets the firefox URL.
+            </summary>
+        </member>
+        <member name="P:DataFactory.Configuration.BrowsersConfiguration.InternetExplorerUrl">
+            <summary>
+            Gets or sets the internet explorer URL.
+            </summary>
+        </member>
+        <member name="M:DataFactory.Configuration.BrowsersConfiguration.UpdateAppSettingsKey(System.String,System.String)">
+            <summary>
+            Updates the application settings key.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="T:DataFactory.Configuration.Browser">
+            <summary>
+            The Browser enum.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Browser.Firefox">
+            <summary>
+            The firefox.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Browser.IE11">
+            <summary>
+            The internet explorer 11.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Browser.ChromeDesktop">
+            <summary>
+            The chrome desktop.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Browser.ChromeAndroid7">
+            <summary>
+            The chrome android 7.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Browser.ChromeAndroid8">
+            <summary>
+            The chrome android 8.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Browser.ChromeAndroid9">
+            <summary>
+            The chrome android 9.
+            </summary>
+        </member>
+        <member name="T:DataFactory.Configuration.ConfigurationParameters">
+            <summary>
+            The configuration parameters.
+            </summary>
+        </member>
+        <member name="M:DataFactory.Configuration.ConfigurationParameters.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DataFactory.Configuration.ConfigurationParameters"/> class.
+            </summary>
+        </member>
+        <member name="P:DataFactory.Configuration.ConfigurationParameters.BrowsersConfiguration">
+            <summary>
+            Gets or sets the browsers configuration.
+            </summary>
+            <value>
+            The browsers configuration.
+            </value>
+        </member>
+        <member name="P:DataFactory.Configuration.ConfigurationParameters.FiddlerPort">
+            <summary>
+            Gets or sets the fiddler port.
+            </summary>
+            <value>
+            The fiddler port.
+            </value>
+        </member>
+        <member name="P:DataFactory.Configuration.ConfigurationParameters.FileOperationsTimeout">
+            <summary>
+            Gets or sets the file operations timeout.
+            </summary>
+            <value>
+            The file operations timeout.
+            </value>
+        </member>
+        <member name="P:DataFactory.Configuration.ConfigurationParameters.ProjectRootFolder">
+            <summary>
+            Gets or sets the project root folder.
+            </summary>
+            <value>
+            The project root folder.
+            </value>
+        </member>
+        <member name="P:DataFactory.Configuration.ConfigurationParameters.MongoDbConnectionString">
+            <summary>
+            Gets or sets the mongo database connection string.
+            </summary>
+            <value>
+            The mongo database connection string.
+            </value>
+        </member>
+        <member name="P:DataFactory.Configuration.ConfigurationParameters.MongoDbDatabaseName">
+            <summary>
+            Gets or sets the name of the mongo database database.
+            </summary>
+            <value>
+            The name of the mongo database database.
+            </value>
+        </member>
+        <member name="P:DataFactory.Configuration.ConfigurationParameters.MongoDbCollectionName">
+            <summary>
+            Gets or sets the name of the mongo database collection.
+            </summary>
+            <value>
+            The name of the mongo database collection.
+            </value>
+        </member>
+        <member name="P:DataFactory.Configuration.ConfigurationParameters.ExcelParametersFile">
+            <summary>
+            Gets or sets the excel parameters file.
+            </summary>
+            <value>
+            The excel parameters file.
+            </value>
+        </member>
+        <member name="P:DataFactory.Configuration.ConfigurationParameters.Urls">
+            <summary>
+            Gets or sets the Urls.
+            </summary>
+            <value>
+            The Urls.
+            </value>
+        </member>
+        <member name="T:DataFactory.Configuration.Urls">
+            <summary>
+            The Urls class.
+            </summary>
+        </member>
+        <member name="M:DataFactory.Configuration.Urls.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DataFactory.Configuration.Urls"/> class.
+            </summary>
+        </member>
+        <member name="P:DataFactory.Configuration.Urls.WebTableAppUrl">
+            <summary>
+            Gets or sets the web table application URL.
+            </summary>
+            <value>
+            The web table application URL.
+            </value>
+        </member>
+        <member name="P:DataFactory.Configuration.Urls.ApiUrl">
+            <summary>
+            Gets or sets the API URL.
+            </summary>
+            <value>
+            The API URL.
+            </value>
+        </member>
+        <member name="P:DataFactory.Configuration.Urls.FileUploadAppUrl">
+            <summary>
+            Gets or sets the file upload URL.
+            </summary>
+            <value>
+            The file upload URL.
+            </value>
+        </member>
+        <member name="P:DataFactory.Configuration.Urls.FileDownloadAppUrl">
+            <summary>
+            Gets or sets the file download URL.
+            </summary>
+            <value>
+            The file download URL.
+            </value>
+        </member>
+        <member name="P:DataFactory.Configuration.Urls.FieldLimitationsUrl">
+            <summary>
+            Gets or sets the field limitations URL.
+            </summary>
+            <value>
+            The field limitations URL.
+            </value>
+        </member>
+        <member name="P:DataFactory.Configuration.Urls.RegistrationUsersUrl">
+            <summary>
+            Gets or sets the registration users URL.
+            </summary>
+            <value>
+            The registration users URL.
+            </value>
+        </member>
+        <member name="P:DataFactory.Configuration.Urls.DragAndDropUrl">
+            <summary>
+            Gets or sets the drag and drop URL.
+            </summary>
+            <value>
+            The drag and drop URL.
+            </value>
+        </member>
+        <member name="P:DataFactory.Configuration.Urls.WebElementsColorUrl">
+            <summary>
+            Gets or sets the web elements color URL.
+            </summary>
+            <value>
+            The web elements color URL.
+            </value>
+        </member>
+        <member name="P:DataFactory.Configuration.Urls.AppUrl">
+            <summary>
+            Gets or sets the application URL.
+            </summary>
+            <value>
+            The application URL.
+            </value>
+        </member>
+        <member name="T:DataFactory.Configuration.Constants">
+            <summary>
+            The front end basic context.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.ChromeSessionId">
+            <summary>
+            The chrome session identifier.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.ChromeDriverExecutable">
+            <summary>
+            The chrome driver executable.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.FirefoxProcessName">
+            <summary>
+            The firefox process name.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.FirefoxExecutableName">
+            <summary>
+            The firefox executable name.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.AnimationWaitInMillis">
+            <summary>
+            The animation wait in millis.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.Chrome">
+            <summary>
+            The chrome.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.DefaultPassword">
+            <summary>
+            The default password.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.InternetExplorer">
+            <summary>
+            The internet explorer.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.BrowserContext">
+            <summary>
+            The browser context.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.UsersDataSheetUserNameColumn">
+            <summary>
+            The users data sheet user name column.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.UserDataSheetUserPasswordColumn">
+            <summary>
+            The user data sheet user password column.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.UserDataSheetFirstNameColumn">
+            <summary>
+            The user data sheet first name column.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.UserDataSheetLastNameColumn">
+            <summary>
+            The user data sheet last name column.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.UserDataSheetPhoneColumn">
+            <summary>
+            The user data sheet phone column.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.UserDataSheetEmailColumn">
+            <summary>
+            The user data sheet email column.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.UserDataSheetAddress1Column">
+            <summary>
+            The user data sheet address 1 column.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.UserDataSheetAddress2Column">
+            <summary>
+            The user data sheet address 2 column.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.UserDataSheetCityColumn">
+            <summary>
+            The user data sheet city column.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.UserDataSheetStateProvince">
+            <summary>
+            The user data sheet state province.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.UserDataSheetPostalCode">
+            <summary>
+            The user data sheet postal code.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.UserDataSheetCountry">
+            <summary>
+            The use data sheet country.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.UserDataSheetName">
+            <summary>
+            The user data sheet name.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.ClientsDatabase">
+            <summary>
+            The collection name.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.ClientsCollection">
+            <summary>
+            The clients database.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.ExistingUser">
+            <summary>
+            The existing user.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.NonExistingUser">
+            <summary>
+            The non existing user.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.NewUser">
+            <summary>
+            The new user.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.Android7">
+            <summary>
+            The android 7.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.Android8">
+            <summary>
+            The android 8.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.Android9">
+            <summary>
+            The android 9.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.RedHexValue">
+            <summary>
+            The red color.
+            </summary>
+        </member>
+        <member name="F:DataFactory.Configuration.Constants.RedColor">
+            <summary>
+            The red color.
+            </summary>
+        </member>
+        <member name="T:AutomationHelpers.Enums.EnumHelper">
+            <summary>
+            The enum helper class.
+            </summary>
+        </member>
+        <member name="M:AutomationHelpers.Enums.EnumHelper.ToEnum``1(System.String)">
+            <summary>
+            Converts to enum.
+            </summary>
+            <typeparam name="T">The type of the enum.</typeparam>
+            <param name="value">The value.</param>
+            <returns>The enum value of the string.</returns>
+        </member>
+    </members>
+</doc>

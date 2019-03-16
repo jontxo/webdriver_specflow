@@ -1,0 +1,1184 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebDriverHelper</name>
+    </assembly>
+    <members>
+        <member name="T:Automation.WebDriverExtensions.ElementExtensions">
+            <summary>
+            WebDriver Extensions.
+            </summary>
+            <summary>
+            The element extensions.
+            </summary>
+            <summary>
+            The webelement extensions.
+            </summary>
+            <summary>
+            The webelement extensions.
+            </summary>
+            <summary>
+            WebDriver Extensions.
+            </summary>
+            <summary>
+            WebDriver Extensions.
+            </summary>
+            <summary>
+            WebElement extensions.
+            </summary>
+            <summary>
+            The web driver extensions.
+            </summary>
+            <summary>
+            The Element extensions.
+            </summary>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.UnWrapElement(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Unwraps the webElement.
+            </summary>
+            <param name="element">The element.</param>
+            <returns>The unwrapped webElement.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetWebDriver(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Gets the web driver.
+            </summary>
+            <param name="element">The element.</param>
+            <returns>Get the webDriver of a webElement.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetJavaScriptExecutor(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Gets the java script executor.
+            </summary>
+            <param name="webDriver">The web driver.</param>
+            <returns>The Javascript Executor.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetJsScriptExecutor(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Gets the script executor.
+            </summary>
+            <param name="element">The element.</param>
+            <returns>The javascript executor.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.DragAndDropToOffset(OpenQA.Selenium.IWebElement,System.Int32,System.Int32)">
+            <summary>
+            Drags the and drop to offset.
+            </summary>
+            <param name="webElement">The web element.</param>
+            <param name="positionX">The position x.</param>
+            <param name="positionY">The position y.</param>
+            <exception cref="T:System.Exception">Element Not Moved.</exception>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.DragIntoElement(OpenQA.Selenium.IWebElement,OpenQA.Selenium.IWebElement)">
+            <summary>
+            Drags the into element.
+            </summary>
+            <param name="webElement">The web element.</param>
+            <param name="targetWebElement">The target web element.</param>
+            <exception cref="T:System.Exception">Element Not Moved.</exception>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.DragAndDropInThreeActions(OpenQA.Selenium.IWebElement,OpenQA.Selenium.IWebElement)">
+            <summary>
+            Drags the and drop in three actions.
+            </summary>
+            <param name="webElement">The web element.</param>
+            <param name="targetWebElement">The target web element.</param>
+            <exception cref="T:System.Exception">Element Not Moved.</exception>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetChildElement(OpenQA.Selenium.IWebElement,OpenQA.Selenium.By)">
+            <summary>
+            Gets the child element.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="by">The by.</param>
+            <returns>The child element obtained using the by condition.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetChildElement(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Gets the child element.
+            </summary>
+            <param name="element">The element.</param>
+            <returns>Get child element.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetParentElement(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Gets the parent element.
+            </summary>
+            <param name="element">The element.</param>
+            <returns>Get the parent element of a webElement.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.Hover(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Hovers the specified web element.
+            </summary>
+            <param name="webElement">The web element.</param>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.HoverAndClick(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Hovers the and click.
+            </summary>
+            <param name="webElement">The web element.</param>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.JSHoverAndClick(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Jses the hover and click.
+            </summary>
+            <param name="webElement">The web element.</param>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.JSClick(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Javascript the click.
+            </summary>
+            <param name="webElement">The web element.</param>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.SelectFromDropDownByIndex(OpenQA.Selenium.IWebElement,System.Int32)">
+            <summary>
+            The select from drop down by index.
+            </summary>
+            <param name="webElement">The web element.</param>
+            <param name="index">The index.</param>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.SelectFromDropDownByText(OpenQA.Selenium.IWebElement,System.String)">
+            <summary>
+            The select from drop down by text.
+            </summary>
+            <param name="webElement">The web element.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.SelectFromDropDownByValue(OpenQA.Selenium.IWebElement,System.String)">
+            <summary>
+            The select from drop down by value.
+            </summary>
+            <param name="webElement">The web element.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.ClickAndHold(OpenQA.Selenium.IWebElement)">
+            <summary>
+            The click and hold.
+            </summary>
+            <param name="webElement">The webElement <see cref="T:OpenQA.Selenium.IWebElement"/>.</param>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.DoubleClick(OpenQA.Selenium.IWebElement)">
+            <summary>
+            The double click.
+            </summary>
+            <param name="webElement">The webElement <see cref="T:OpenQA.Selenium.IWebElement"/>.</param>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.RightClick(OpenQA.Selenium.IWebElement)">
+            <summary>
+            The right click.
+            </summary>
+            <param name="webElement">The webElement <see cref="T:OpenQA.Selenium.IWebElement"/>.</param>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.Displayed(OpenQA.Selenium.IWebElement)">
+            <summary>
+            The displayed.
+            </summary>
+            <param name="webElement">The web element.</param>
+            <returns>The <see cref="T:System.Boolean"/>.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.Exists(OpenQA.Selenium.IWebElement)">
+            <summary>
+            The exists.
+            </summary>
+            <param name="webElement">The web element.</param>
+            <returns>The <see cref="T:System.Boolean"/>.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetBackgroundColor(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Gets the color of the background.
+            </summary>
+            <param name="element">The element.</param>
+            <returns>The background color of the element.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetWebElementLineNumbers(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Gets the web element line numbers.
+            </summary>
+            <param name="element">The element.</param>
+            <returns>The webelemnt line numbers.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetClassName(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Gets the name of the class.
+            </summary>
+            <param name="element">The element.</param>
+            <returns>Get the class name of a webElement.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetInnerHTML(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Gets the inner HTML.
+            </summary>
+            <param name="element">The element.</param>
+            <returns>Get the innerHTML of a webElement.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetOuterHTML(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Gets the outer HTML.
+            </summary>
+            <param name="element">The element.</param>
+            <returns>Get the outerHTML property of a webElement.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.IsOverflowing(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Determines whether this instance is overflowing.
+            </summary>
+            <param name="element">The element.</param>
+            <returns><c>true</c> if the specified element is overflowing; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetElementProperties(OpenQA.Selenium.IWebElement,Automation.WebDriverExtensions.ByProperty)">
+            <summary>
+            Gets the element properties.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="property">The property.</param>
+            <returns>Get webElement properties.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.ConvertColorFromRGBAToHex(System.String)">
+            <summary>
+            Converts the color from RGBA to hexadecimal.
+            </summary>
+            <param name="rgbaColor">Color of the RGBA.</param>
+            <returns>The RGBA color converted to a string.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.ScrollToElement(OpenQA.Selenium.IWebElement)">
+            <summary>
+            The ScrollToElement.
+            </summary>
+            <param name="element">The element <see cref="T:OpenQA.Selenium.IWebElement"/>.</param>
+        </member>
+        <member name="F:Automation.WebDriverExtensions.ElementExtensions.KeysExclude">
+            <summary>
+            Defines the KeysExclude.
+            </summary>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.WaitUntil(OpenQA.Selenium.IWebElement,System.Func{OpenQA.Selenium.IWebElement,System.Boolean},System.Double)">
+            <summary>
+            Waits the until.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="condition">The condition.</param>
+            <param name="waitSeconds">The wait seconds.</param>
+            <returns>a webElement if a condition is met in less than the waitSeconds time.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.WaitUntilFindElement(OpenQA.Selenium.IWebElement,OpenQA.Selenium.By,System.Double)">
+            <summary>
+            Waits the until find element.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="by">The by.</param>
+            <param name="waitSeconds">The wait seconds.</param>
+            <returns>The <see cref="T:OpenQA.Selenium.IWebElement"/>.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.WaitUntilIsEnabled(OpenQA.Selenium.IWebElement,System.Boolean,System.Double)">
+            <summary>
+            Waits the until is enabled.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="isEnabled">if set to <c>true</c> [is enabled].</param>
+            <param name="waitSeconds">The wait seconds.</param>
+            <returns>a webElement if it is enabled in less than the waitTime.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.WaitUntilCheckIsEnabled(OpenQA.Selenium.IWebElement,System.Boolean,System.Double)">
+            <summary>
+            Waits the until check is enabled.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="isEnabled">if set to <c>true</c> [is enabled].</param>
+            <param name="waitSeconds">The wait seconds.</param>
+            <returns>True if the element is found.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.WaitUntilCheckExists(OpenQA.Selenium.IWebElement,System.Boolean,System.Double)">
+            <summary>
+            The WaitUntilCheckExists.
+            </summary>
+            <param name="element">The element <see cref="T:OpenQA.Selenium.IWebElement"/>.</param>
+            <param name="isDisplayed">The isDisplayed <see cref="T:System.Boolean"/>.</param>
+            <param name="waitSeconds">The waitSeconds <see cref="T:System.Double"/>.</param>
+            <returns>The <see cref="T:System.Boolean"/>.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.WaitUntilFindElements(OpenQA.Selenium.IWebElement,OpenQA.Selenium.By,System.Double)">
+            <summary>
+            The WaitUntilFindElements.
+            </summary>
+            <param name="element">The element <see cref="T:OpenQA.Selenium.IWebElement"/>.</param>
+            <param name="by">The by <see cref="T:OpenQA.Selenium.By"/>.</param>
+            <param name="waitSeconds">The waitSeconds <see cref="T:System.Double"/>.</param>
+            <returns>The <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1"/>.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.ClickWait(OpenQA.Selenium.IWebElement)">
+            <summary>
+            The ClickWait.
+            </summary>
+            <param name="element">The element <see cref="T:OpenQA.Selenium.IWebElement"/>.</param>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetTextWait(OpenQA.Selenium.IWebElement)">
+            <summary>
+            The GetTextWait.
+            </summary>
+            <param name="element">The element <see cref="T:OpenQA.Selenium.IWebElement"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.SendKeysWait(OpenQA.Selenium.IWebElement,System.String)">
+            <summary>
+            The SendKeysWait.
+            </summary>
+            <param name="element">The element <see cref="T:OpenQA.Selenium.IWebElement"/>.</param>
+            <param name="keys">The keys <see cref="T:System.String"/>.</param>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.ClearWait(OpenQA.Selenium.IWebElement)">
+            <summary>
+            The ClearWait.
+            </summary>
+            <param name="element">The element <see cref="T:OpenQA.Selenium.IWebElement"/>.</param>
+            <returns>The <see cref="T:OpenQA.Selenium.IWebElement"/>.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.WaitThread(System.Int32)">
+            <summary>
+            The WaitThread.
+            </summary>
+            <param name="milliseconds">The milliseconds <see cref="T:System.Int32"/>.</param>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.WaitForElementVisible(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.IWebElement,System.TimeSpan)">
+            <summary>
+            The wait for element visible.
+            </summary>
+            <param name="driver">The driver <see cref="T:OpenQA.Selenium.IWebDriver"/>.</param>
+            <param name="element">The element <see cref="T:OpenQA.Selenium.IWebElement"/>.</param>
+            <param name="timespan">The timespan <see cref="T:System.TimeSpan"/>.</param>
+            <returns>The <see cref="T:System.Boolean"/>.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.WaitUntil(OpenQA.Selenium.IWebDriver,System.Func{OpenQA.Selenium.IWebDriver,System.Boolean},System.Double)">
+            <summary>
+            Waits the until.
+            </summary>
+            <param name="webDriver">The web driver.</param>
+            <param name="condition">The condition.</param>
+            <param name="waitSeconds">The wait seconds.</param>
+            <returns>The wait element.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.WaitUntilFindElement(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By,System.Double)">
+            <summary>
+            The WaitUntilFindElement.
+            </summary>
+            <param name="webDriver">The webDriver <see cref="T:OpenQA.Selenium.IWebDriver"/>.</param>
+            <param name="by">The by <see cref="T:OpenQA.Selenium.By"/>.</param>
+            <param name="waitSeconds">The waitSeconds <see cref="T:System.Double"/>.</param>
+            <returns>The <see cref="T:OpenQA.Selenium.IWebElement"/>.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.WaitUntilFindElements(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By,System.Double)">
+            <summary>
+            The WaitUntilFindElements.
+            </summary>
+            <param name="webDriver">The webDriver <see cref="T:OpenQA.Selenium.IWebDriver"/>.</param>
+            <param name="by">The by <see cref="T:OpenQA.Selenium.By"/>.</param>
+            <param name="waitSeconds">The waitSeconds <see cref="T:System.Double"/>.</param>
+            <returns>The <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1"/>.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetWaitUntil(OpenQA.Selenium.IWebElement,System.Double)">
+            <summary>
+            The GetWaitUntil.
+            </summary>
+            <param name="element">The element <see cref="T:OpenQA.Selenium.IWebElement"/>.</param>
+            <param name="waitSeconds">The waitSeconds <see cref="T:System.Double"/>.</param>
+            <returns>The <see cref="T:OpenQA.Selenium.Support.UI.IWait`1"/>.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetScreenshot(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            The get screenshot.
+            </summary>
+            <param name="driver">The driver.</param>
+            <returns>The <see cref="T:OpenQA.Selenium.Screenshot"/>.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.IsAlertPresent(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            The is alert present.
+            </summary>
+            <param name="driver">The driver.</param>
+            <returns>The <see cref="T:System.Boolean"/>.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.ScrollDownPage(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            The scroll down page.
+            </summary>
+            <param name="driver">The driver.</param>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.WaitForAjax(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            The wait for ajax.
+            </summary>
+            <param name="driver">The driver.</param>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.WaitForPageToLoad(OpenQA.Selenium.IWebDriver,System.Nullable{System.TimeSpan})">
+            <summary>
+            The wait for page to load.
+            </summary>
+            <param name="driver">The driver.</param>
+            <param name="timeSpan">The time span.</param>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.WaitUntilDocumentIsReady(OpenQA.Selenium.IWebDriver,System.TimeSpan)">
+            <summary>
+            The wait until document is ready.
+            </summary>
+            <param name="driver">The driver.</param>
+            <param name="timeout">The time span.</param>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.SwitchToFrame(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.IWebElement)">
+            <summary>
+            Switches to frame.
+            </summary>
+            <param name="driver">The driver.</param>
+            <param name="frameName">WebElement of the frame.</param>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.SwitchToMainFrame(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Switches to main frame.
+            </summary>
+            <param name="driver">The driver.</param>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetRow(OpenQA.Selenium.IWebElement,System.Int32)">
+            <summary>
+            Gets the row.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="rowNumber">The row number.</param>
+            <returns>A webelement row.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetColumn(OpenQA.Selenium.IWebElement,System.Int32)">
+            <summary>
+            Gets the column.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="columnNumber">The column number.</param>
+            <returns>A webelmeent column.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetCellIcon(OpenQA.Selenium.IWebElement,System.Int32,System.Int32)">
+            <summary>
+            Gets the cell icon.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="rowNumber">The row number.</param>
+            <param name="columnNumber">The column number.</param>
+            <returns>The webelement cell column.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetCellText(OpenQA.Selenium.IWebElement,System.Int32,System.Int32)">
+            <summary>
+            Gets the cell text.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="rowNumber">The row number.</param>
+            <param name="columnNumber">The column number.</param>
+            <returns>The cell content.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetCell(OpenQA.Selenium.IWebElement,System.Int32,System.Int32)">
+            <summary>
+            Gets the cell.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="rowNumber">The row number.</param>
+            <param name="columnNumber">The column number.</param>
+            <returns>The webelement cell.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetCell(OpenQA.Selenium.IWebElement,System.String,System.String)">
+            <summary>
+            Gets the cell.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="rowName">Name of the row.</param>
+            <param name="columnName">Name of the column.</param>
+            <returns>The webelement cell.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetHeaderColumn(OpenQA.Selenium.IWebElement,System.Int32)">
+            <summary>
+            Gets the header column.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="columnNumber">The column number.</param>
+            <returns>The header column.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetColumnNumber(OpenQA.Selenium.IWebElement,System.String)">
+            <summary>
+            Gets the column number.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="columnName">Name of the column.</param>
+            <returns>THe column number.</returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Element {columnName}.</exception>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetRowNumber(OpenQA.Selenium.IWebElement,System.String)">
+            <summary>
+            Gets the row number.
+            </summary>
+            <param name="element">The element.</param>
+            <param name="rowName">Name of the row.</param>
+            <returns>The rownumber.</returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Element {rowNumber}.</exception>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetRowNumber(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Gets the row number.
+            </summary>
+            <param name="element">The element.</param>
+            <returns>The row number.</returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.ScrollToEndOfTable(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Scrolls to end of table.
+            </summary>
+            <param name="element">The element.</param>
+        </member>
+        <member name="T:Automation.WebDriverExtensions.ByProperty">
+            <summary>
+            Defines the <see cref="T:Automation.WebDriverExtensions.ByProperty"/>.
+            </summary>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ByProperty.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Automation.WebDriverExtensions.ByProperty"/> class.
+            </summary>
+            <param name="propertyValue">The property value.</param>
+        </member>
+        <member name="P:Automation.WebDriverExtensions.ByProperty.InnerHTML">
+            <summary>
+            Gets the InnerHTML.
+            </summary>
+        </member>
+        <member name="P:Automation.WebDriverExtensions.ByProperty.OuterHTML">
+            <summary>
+            Gets the OuterHTML.
+            </summary>
+        </member>
+        <member name="P:Automation.WebDriverExtensions.ByProperty.ClassName">
+            <summary>
+            Gets the ClassName.
+            </summary>
+        </member>
+        <member name="P:Automation.WebDriverExtensions.ByProperty.ScrollWidth">
+            <summary>
+            Gets the ScrollWidth.
+            </summary>
+        </member>
+        <member name="P:Automation.WebDriverExtensions.ByProperty.ClientWidth">
+            <summary>
+            Gets the ClientWidth.
+            </summary>
+        </member>
+        <member name="P:Automation.WebDriverExtensions.ByProperty.PropertyValue">
+            <summary>
+            Gets the PropertyValue.
+            </summary>
+        </member>
+        <member name="T:Automation.Helpers.FiddlerHelper">
+            <summary>
+            Find Helper class.
+            </summary>
+        </member>
+        <member name="M:Automation.Helpers.FiddlerHelper.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Automation.Helpers.FiddlerHelper"/> class.
+            </summary>
+        </member>
+        <member name="P:Automation.Helpers.FiddlerHelper.Messages">
+            <summary>
+            Gets the list that holds the messages collected by fiddler.
+            </summary>
+        </member>
+        <member name="M:Automation.Helpers.FiddlerHelper.CreateProxy(System.String)">
+            <summary>
+            Creates the proxy object of the selenium webDriver.
+            </summary>
+            <param name="proxyPort">proxy port that will be used by the proxy.</param>
+            <returns>returns the proxy object.</returns>
+        </member>
+        <member name="M:Automation.Helpers.FiddlerHelper.StartFiddlerProxy(System.Int32)">
+            <summary>
+            Starts the fiddler application proxy.
+            </summary>
+            <param name="desiredPort">port number that will use fiddler.</param>
+            <returns>the proxy port used by fiddler.</returns>
+        </member>
+        <member name="M:Automation.Helpers.FiddlerHelper.StartFiddler">
+            <summary>
+            It starts the fiddler application.
+            </summary>
+        </member>
+        <member name="T:Automation.Helpers.WebTableHelper">
+            <summary>
+            The web table helper.
+            </summary>
+        </member>
+        <member name="M:Automation.Helpers.WebTableHelper.#ctor(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Automation.Helpers.WebTableHelper"/> class.
+            </summary>
+            <param name="webTable">The webTable.</param>
+        </member>
+        <member name="P:Automation.Helpers.WebTableHelper.WebTable">
+            <summary>
+            Gets the web table.
+            </summary>
+        </member>
+        <member name="M:Automation.Helpers.WebTableHelper.GetRow(System.Int32)">
+            <summary>
+            The get row.
+            </summary>
+            <param name="rowNumber">The row number.</param>
+            <returns>The <see cref="T:OpenQA.Selenium.IWebElement"/>.</returns>
+        </member>
+        <member name="M:Automation.Helpers.WebTableHelper.GetColumn(System.Int32)">
+            <summary>
+            The get column.
+            </summary>
+            <param name="columnNumber">The column number.</param>
+            <returns>The <see><cref>IList</cref></see> .</returns>
+        </member>
+        <member name="M:Automation.Helpers.WebTableHelper.GetCell(System.Int32,System.Int32)">
+            <summary>
+            The get cell.
+            </summary>
+            <param name="rowNumber">The row number.</param>
+            <param name="columnNumber">The column number.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:Automation.Helpers.WebTableHelper.GetCell(System.Int32,System.String)">
+            <summary>
+            The get cell.
+            </summary>
+            <param name="rowNumber">The row number.</param>
+            <param name="columnName">The column name.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:Automation.Helpers.WebTableHelper.GetCell(System.String,System.String)">
+            <summary>
+            The get cell.
+            </summary>
+            <param name="rowName">The row name.</param>
+            <param name="columnName">The column name.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:Automation.Helpers.WebTableHelper.IsValuePresentInAllTheColumnCells(System.Int32,System.String)">
+            <summary>
+            The is value present in all the column cells.
+            </summary>
+            <param name="columnNumber">The column number.</param>
+            <param name="value">The value.</param>
+            <returns>The <see cref="T:System.Boolean"/>.</returns>
+        </member>
+        <member name="M:Automation.Helpers.WebTableHelper.IsValuePresentInAllTheColumnCellsExceptBlanks(System.Int32,System.String)">
+            <summary>
+            The is value present in all the column cells except blanks.
+            </summary>
+            <param name="columnNumber">The column number.</param>
+            <param name="value">The value.</param>
+            <returns>The <see cref="T:System.Boolean"/>.</returns>
+        </member>
+        <member name="T:Automation.Pages.DragAndDropPage">
+            <summary>
+            The drag and drop page.
+            </summary>
+        </member>
+        <member name="F:Automation.Pages.DragAndDropPage.highTatras">
+            <summary>
+            The web element High TATRAS.
+            </summary>
+        </member>
+        <member name="F:Automation.Pages.DragAndDropPage.highTatras2">
+            <summary>
+            The web element High TATRAS.
+            </summary>
+        </member>
+        <member name="F:Automation.Pages.DragAndDropPage.trash">
+            <summary>
+            The web element trash.
+            </summary>
+        </member>
+        <member name="F:Automation.Pages.DragAndDropPage.dragAndDropToPositionTab">
+            <summary>
+            The drag and drop to position tab.
+            </summary>
+        </member>
+        <member name="F:Automation.Pages.DragAndDropPage.dragMeAround">
+            <summary>
+            The DRAGGABLE and sortable.
+            </summary>
+        </member>
+        <member name="F:Automation.Pages.DragAndDropPage.dragAndDropFrame">
+            <summary>
+            The drag and drop frame.
+            </summary>
+        </member>
+        <member name="F:Automation.Pages.DragAndDropPage.webDriver">
+            <summary>
+            The webDriver.
+            </summary>
+        </member>
+        <member name="M:Automation.Pages.DragAndDropPage.#ctor(Automation.WebDriverHelper.WebDriverContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Automation.Pages.DragAndDropPage"/> class.
+            </summary>
+            <param name="webDriverContext">The web driver context.</param>
+        </member>
+        <member name="M:Automation.Pages.DragAndDropPage.DragElementAndDropToAnotherElement(System.String,System.String)">
+            <summary>
+            Drags the element and drop to another element.
+            </summary>
+            <param name="element1Name">Name of the element1.</param>
+            <param name="element2Name">Name of the element2.</param>
+        </member>
+        <member name="M:Automation.Pages.DragAndDropPage.DragAndDropToOffset(System.String,System.Int32,System.Int32)">
+            <summary>
+            Drags the and drop to offset.
+            </summary>
+            <param name="webElementName">Name of the web element.</param>
+            <param name="positionX">The position x.</param>
+            <param name="positionY">The position y.</param>
+        </member>
+        <member name="M:Automation.Pages.DragAndDropPage.ClickOnDraggableAndSortableButton">
+            <summary>
+            The click on DRAGGABLE and sortable button.
+            </summary>
+        </member>
+        <member name="M:Automation.Pages.DragAndDropPage.ClickOnAcceptedElementsTab">
+            <summary>
+            Clicks the on accepted elements tab.
+            </summary>
+        </member>
+        <member name="T:Automation.Pages.HomePage">
+            <summary>
+            The login page.
+            </summary>
+        </member>
+        <member name="F:Automation.Pages.HomePage.password">
+            <summary>
+            The password.
+            </summary>
+        </member>
+        <member name="F:Automation.Pages.HomePage.userName">
+            <summary>
+            The user name.
+            </summary>
+        </member>
+        <member name="F:Automation.Pages.HomePage.singnOn">
+            <summary>
+            The SIGNIN.
+            </summary>
+        </member>
+        <member name="F:Automation.Pages.HomePage.register">
+            <summary>
+            The register.
+            </summary>
+        </member>
+        <member name="M:Automation.Pages.HomePage.#ctor(Automation.WebDriverHelper.WebDriverContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Automation.Pages.HomePage"/> class.
+            </summary>
+            <param name="webDriverContext">The web driver context.</param>
+        </member>
+        <member name="M:Automation.Pages.HomePage.EnterUserName(System.String)">
+            <summary>
+            The enter user name.
+            </summary>
+            <param name="userNameValue">The user name.</param>
+        </member>
+        <member name="M:Automation.Pages.HomePage.EnterPassword(System.String)">
+            <summary>
+            The enter password.
+            </summary>
+            <param name="passwordValue">The password value.</param>
+        </member>
+        <member name="M:Automation.Pages.HomePage.ClickOnRegisterButton">
+            <summary>
+            The click on register button.
+            </summary>
+        </member>
+        <member name="M:Automation.Pages.HomePage.CheckUserCorrectlyLogged">
+            <summary>
+            Checks the user correctly logged.
+            </summary>
+        </member>
+        <member name="M:Automation.Pages.HomePage.GetElementLineNumbers">
+            <summary>
+            Gets the element line numbers.
+            </summary>
+            <returns>The number of lines of the webelement.</returns>
+        </member>
+        <member name="T:Automation.Pages.WebElementsChecksPage1">
+            <summary>
+            The WebElement Checks page 1.
+            </summary>
+        </member>
+        <member name="F:Automation.Pages.WebElementsChecksPage1.blueFooButton">
+            <summary>
+            The blue foo button.
+            </summary>
+        </member>
+        <member name="M:Automation.Pages.WebElementsChecksPage1.#ctor(Automation.WebDriverHelper.WebDriverContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Automation.Pages.WebElementsChecksPage1"/> class.
+            </summary>
+            <param name="webDriverContext">The web driver context.</param>
+        </member>
+        <member name="M:Automation.Pages.WebElementsChecksPage1.GetBlueButtonBackgroundColor">
+            <summary>
+            Gets the color of the blue button background.
+            </summary>
+            <returns>The background color of the blue element.</returns>
+        </member>
+        <member name="M:Automation.Pages.WebElementsChecksPage1.GetColor(System.String)">
+            <summary>
+            Gets the color.
+            </summary>
+            <param name="color">The color.</param>
+            <returns>The color converted.</returns>
+            <exception cref="T:System.Exception">Unexpected Case.</exception>
+        </member>
+        <member name="T:Automation.Pages.WebTablePage">
+            <summary>
+            The web table page.
+            </summary>
+        </member>
+        <member name="F:Automation.Pages.WebTablePage.webTableWebElement">
+            <summary>
+            The web table.
+            </summary>
+        </member>
+        <member name="F:Automation.Pages.WebTablePage.webTable">
+            <summary>
+            The web table.
+            </summary>
+        </member>
+        <member name="M:Automation.Pages.WebTablePage.#ctor(Automation.WebDriverHelper.WebDriverContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Automation.Pages.WebTablePage"/> class.
+            </summary>
+            <param name="webDriverContext">The web driver context.</param>
+        </member>
+        <member name="M:Automation.Pages.WebTablePage.GetStructureCountryValue(System.String,System.String)">
+            <summary>
+            The get structure country value.
+            </summary>
+            <param name="structure">The structure.</param>
+            <param name="country">The country.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:Automation.Pages.WebTablePage.GetCellValue(System.String,System.String)">
+            <summary>
+            The get value of cell.
+            </summary>
+            <param name="row">The row.</param>
+            <param name="column">The column.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:Automation.Pages.WebTablePage.IsValuePresentInAllTheColumnCells(System.Int32,System.String)">
+            <summary>
+            The is value present in column.
+            </summary>
+            <param name="columnNumber">The column number.</param>
+            <param name="value">The value.</param>
+            <returns>The <see cref="T:System.Boolean"/>.</returns>
+        </member>
+        <member name="T:Automation.WebDriverHelper.AndroidWebDriver">
+            <summary>
+            Android webDriver.
+            </summary>
+        </member>
+        <member name="M:Automation.WebDriverHelper.AndroidWebDriver.StartAppium">
+            <summary>
+            The start appium.
+            </summary>
+            <returns>The appium process.</returns>
+        </member>
+        <member name="M:Automation.WebDriverHelper.AndroidWebDriver.CreateAppiumLocalService">
+            <summary>
+            Create and appium local service.
+            </summary>
+            <returns>An appium local service.</returns>
+        </member>
+        <member name="M:Automation.WebDriverHelper.AndroidWebDriver.CreateNewWebDriver(DataFactory.Configuration.ConfigurationParameters)">
+            <summary>
+            Creates the new chrome web driver.
+            </summary>
+            <param name="configurationParameters">The configuration parameters.</param>
+            <returns>The webDriver.</returns>
+        </member>
+        <member name="M:Automation.WebDriverHelper.AndroidWebDriver.CreateWebDriver(DataFactory.Configuration.ConfigurationParameters)">
+            <summary>
+            Creates the web driver.
+            </summary>
+            <param name="configurationParameters">The configuration parameters.</param>
+            <returns>The firefox webdriver.</returns>
+        </member>
+        <member name="M:Automation.WebDriverHelper.AndroidWebDriver.CreateAppiumOptions(DataFactory.Configuration.ConfigurationParameters)">
+            <summary>
+            Create appium options.
+            </summary>
+            <param name="configurationParameters">The configuration parameters.</param>
+            <returns>The appium options.</returns>
+        </member>
+        <member name="T:Automation.WebDriverHelper.ChromeWebDriver">
+            <summary>
+            The browser web driver chrome.
+            </summary>
+        </member>
+        <member name="M:Automation.WebDriverHelper.ChromeWebDriver.CreateNewWebDriver(DataFactory.Configuration.ConfigurationParameters)">
+            <summary>
+            Creates the new chrome web driver.
+            </summary>
+            <param name="configurationParameters">The configuration parameters.</param>
+            <returns>The webDriver.</returns>
+        </member>
+        <member name="M:Automation.WebDriverHelper.ChromeWebDriver.CreateReusableWebDriver(DataFactory.Configuration.ConfigurationParameters)">
+            <summary>
+            Creates the reusable web driver.
+            </summary>
+            <param name="configurationParameters">The configuration parameters.</param>
+            <returns>The webdriver object.</returns>
+        </member>
+        <member name="M:Automation.WebDriverHelper.ChromeWebDriver.CreateWebDriver(DataFactory.Configuration.ConfigurationParameters)">
+            <summary>
+            Creates the web driver.
+            </summary>
+            <param name="configurationParameters">The configuration parameters.</param>
+            <returns>The chrome webdriver.</returns>
+        </member>
+        <member name="M:Automation.WebDriverHelper.ChromeWebDriver.CreateChromeOptions(DataFactory.Configuration.ConfigurationParameters)">
+            <summary>
+            Creates the chrome options.
+            </summary>
+            <param name="configurationParameters">The configuration parameters.</param>
+            <returns>The chrome driver.</returns>
+        </member>
+        <member name="T:Automation.WebDriverHelper.CustomChromeRemoteWebDriver">
+            <summary>
+            The custom remote web driver.
+            </summary>
+        </member>
+        <member name="F:Automation.WebDriverHelper.CustomChromeRemoteWebDriver.sessionIdPath">
+            <summary>
+            The session ID path.
+            </summary>
+        </member>
+        <member name="M:Automation.WebDriverHelper.CustomChromeRemoteWebDriver.#ctor(System.Uri,OpenQA.Selenium.DriverOptions)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Automation.WebDriverHelper.CustomChromeRemoteWebDriver"/> class.
+            </summary>
+            <param name="remoteAddress">The remote address.</param>
+            <param name="driverOptions">The driver options.</param>
+        </member>
+        <member name="P:Automation.WebDriverHelper.CustomChromeRemoteWebDriver.Parameters">
+            <summary>
+            Gets or sets the Parameters.
+            </summary>
+        </member>
+        <member name="M:Automation.WebDriverHelper.CustomChromeRemoteWebDriver.InitializeParameters">
+            <summary>
+            The initialize parameters.
+            </summary>
+        </member>
+        <member name="M:Automation.WebDriverHelper.CustomChromeRemoteWebDriver.Execute(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            The execute.
+            </summary>
+            <param name="driverCommandToExecute">The driver command to execute.</param>
+            <param name="parameters">The parameters.</param>
+            <returns>The <see cref="T:OpenQA.Selenium.Remote.Response"/>.</returns>
+        </member>
+        <member name="T:Automation.WebDriverHelper.FirefoxWebDriver">
+            <summary>
+            The browser web driver firefox.
+            </summary>
+        </member>
+        <member name="M:Automation.WebDriverHelper.FirefoxWebDriver.CreateNewWebDriver(DataFactory.Configuration.ConfigurationParameters)">
+            <summary>
+            Creates the new chrome web driver.
+            </summary>
+            <param name="configurationParameters">The configuration parameters.</param>
+            <returns>The webDriver.</returns>
+        </member>
+        <member name="M:Automation.WebDriverHelper.FirefoxWebDriver.CreateReusableWebDriver(DataFactory.Configuration.ConfigurationParameters)">
+            <summary>
+            Creates the reusable web driver.
+            </summary>
+            <param name="configurationParameters">The configuration parameters.</param>
+            <returns>The webdriver object.</returns>
+        </member>
+        <member name="M:Automation.WebDriverHelper.FirefoxWebDriver.CreateWebDriver(DataFactory.Configuration.ConfigurationParameters)">
+            <summary>
+            Creates the web driver.
+            </summary>
+            <param name="configurationParameters">The configuration parameters.</param>
+            <returns>The firefox webdriver.</returns>
+        </member>
+        <member name="M:Automation.WebDriverHelper.FirefoxWebDriver.CreateFirefoxOptions(DataFactory.Configuration.ConfigurationParameters)">
+            <summary>
+            Creates the firefox options.
+            </summary>
+            <param name="configurationParameters">The configuration parameters.</param>
+            <returns>The firefox options.</returns>
+        </member>
+        <member name="M:Automation.WebDriverHelper.FirefoxWebDriver.CreateFirefoxProfile(DataFactory.Configuration.ConfigurationParameters)">
+            <summary>
+            Creates the firefox profile.
+            </summary>
+            <param name="configurationParameters">The configuration parameters.</param>
+            <returns>A firefox profile.</returns>
+        </member>
+        <member name="T:Automation.WebDriverHelper.IeWebdriver">
+            <summary>
+            The browser web driver IE.
+            </summary>
+        </member>
+        <member name="M:Automation.WebDriverHelper.IeWebdriver.CreateNewWebDriver(DataFactory.Configuration.ConfigurationParameters)">
+            <summary>
+            Creates the new chrome web driver.
+            </summary>
+            <param name="configurationParameters">The configuration parameters.</param>
+            <returns>The webDriver.</returns>
+        </member>
+        <member name="M:Automation.WebDriverHelper.IeWebdriver.CreateReusableWebDriver(DataFactory.Configuration.ConfigurationParameters)">
+            <summary>
+            Creates the reusable web driver.
+            </summary>
+            <param name="configurationParameters">The configuration parameters.</param>
+            <returns>The webdriver object.</returns>
+        </member>
+        <member name="M:Automation.WebDriverHelper.IeWebdriver.CreateWebDriver(DataFactory.Configuration.ConfigurationParameters)">
+            <summary>
+            Creates the web driver.
+            </summary>
+            <param name="configurationParameters">The configuration parameters.</param>
+            <returns>The firefox webdriver.</returns>
+        </member>
+        <member name="M:Automation.WebDriverHelper.IeWebdriver.CreateIeOPtions">
+            <summary>
+            Creates the internet explorer options.
+            </summary>
+            <returns>The internet explorer options.</returns>
+        </member>
+        <member name="T:Automation.WebDriverHelper.WebDriverContext">
+            <summary>
+            The front end basic context.
+            </summary>
+        </member>
+        <member name="F:Automation.WebDriverHelper.WebDriverContext.configurationParameters">
+            <summary>
+            The configuration parameters.
+            </summary>
+        </member>
+        <member name="F:Automation.WebDriverHelper.WebDriverContext.disposed">
+            <summary>
+            The disposed.
+            </summary>
+        </member>
+        <member name="M:Automation.WebDriverHelper.WebDriverContext.#ctor(DataFactory.Configuration.ConfigurationParameters)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Automation.WebDriverHelper.WebDriverContext"/> class.
+            </summary>
+            <param name="configurationParameters"> The configuration parameters object.</param>
+        </member>
+        <member name="P:Automation.WebDriverHelper.WebDriverContext.WebDriver">
+            <summary>
+            Gets or sets the internal driver.
+            </summary>
+            <value>
+            The internal driver.
+            </value>
+        </member>
+        <member name="P:Automation.WebDriverHelper.WebDriverContext.NgWebDriver">
+            <summary>
+            Gets or sets the Driver.
+            </summary>
+        </member>
+        <member name="P:Automation.WebDriverHelper.WebDriverContext.AppiumLocalService">
+            <summary>
+            Gets or sets the appium local service.
+            </summary>
+        </member>
+        <member name="M:Automation.WebDriverHelper.WebDriverContext.IsWebDriverNull">
+            <summary>
+            Determines whether [is web driver null].
+            </summary>
+            <returns>
+              <c>true</c> if [is web driver null]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Automation.WebDriverHelper.WebDriverContext.CreateWebDriver">
+            <summary>
+            Creates the web driver.
+            </summary>
+            <exception cref="T:System.Exception">Unknown browser.</exception>
+        </member>
+        <member name="M:Automation.WebDriverHelper.WebDriverContext.CloseBrowser">
+            <summary>
+            Close and dispose the browser driver if it exists.
+            </summary>
+        </member>
+        <member name="M:Automation.WebDriverHelper.WebDriverContext.MakeWebScreenshot(System.String,System.String)">
+            <summary>
+            The make web screenshot.
+            </summary>
+            <param name="scenario">The scenario.</param>
+            <param name="contextPath">The context Path.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:Automation.WebDriverHelper.WebDriverContext.GoToUrl(System.Uri)">
+            <summary>
+            Goes to URL.
+            </summary>
+            <param name="url">The URL.</param>
+        </member>
+        <member name="M:Automation.WebDriverHelper.WebDriverContext.TakeScreenshot">
+            <summary>
+            Takes the screenshot.
+            </summary>
+        </member>
+        <member name="M:Automation.WebDriverHelper.WebDriverContext.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting
+            unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:Automation.WebDriverHelper.WebDriverContext.Dispose(System.Boolean)">
+            <summary>
+            Dispose function.
+            </summary>
+            <param name="disposing">The disposing variable.</param>
+        </member>
+        <member name="T:WebDriverHelper.Setup.ReuseRemoteWebDriver">
+            <summary>
+            The Reuse Remote Driver.
+            </summary>
+        </member>
+        <member name="F:WebDriverHelper.Setup.ReuseRemoteWebDriver.sessionId">
+            <summary>
+            The session identifier.
+            </summary>
+        </member>
+        <member name="M:WebDriverHelper.Setup.ReuseRemoteWebDriver.#ctor(System.Uri,System.String,OpenQA.Selenium.DriverOptions)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WebDriverHelper.Setup.ReuseRemoteWebDriver"/> class.
+            </summary>
+            <param name="remoteAddress">The remote address.</param>
+            <param name="sessionId">The session identifier.</param>
+            <param name="driverOptions">The driver options.</param>
+        </member>
+        <member name="M:WebDriverHelper.Setup.ReuseRemoteWebDriver.GetExecutorURLFromDriver(OpenQA.Selenium.Remote.RemoteWebDriver)">
+            <summary>
+            Gets the executor URL from driver.
+            </summary>
+            <param name="driver">The driver.</param>
+            <returns>The uri of the webdriver.</returns>
+        </member>
+        <member name="M:WebDriverHelper.Setup.ReuseRemoteWebDriver.Execute(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Executes a command with this driver .
+            </summary>
+            <param name="driverCommandToExecute">A <see cref="T:OpenQA.Selenium.Remote.DriverCommand" /> value representing the command to execute.</param>
+            <param name="parameters">A <see cref="T:System.Collections.IDictionary" /> containing the names and values of the parameters of the command.</param>
+            <returns>
+            A <see cref="T:OpenQA.Selenium.Remote.Response" /> containing information about the success or failure of the command and any data returned by the command.
+            </returns>
+        </member>
+    </members>
+</doc>

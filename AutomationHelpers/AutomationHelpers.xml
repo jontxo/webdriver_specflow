@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AutomationHelpers</name>
+    </assembly>
+    <members>
+        <member name="T:Automation.Reflection.ReflectionExtensions">
+            <summary>
+            The reflection extensions class.
+            </summary>
+        </member>
+        <member name="M:Automation.Reflection.ReflectionExtensions.GetFieldValue``1(System.Object,System.String)">
+            <summary>
+            Gets the field value.
+            </summary>
+            <typeparam name="T">It can by any type.</typeparam>
+            <param name="baseObject">The object.</param>
+            <param name="name">The name.</param>
+            <returns>The value of a field.</returns>
+        </member>
+    </members>
+</doc>
