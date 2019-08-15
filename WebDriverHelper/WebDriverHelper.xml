@@ -192,12 +192,33 @@
             <param name="element">The element.</param>
             <returns>The background color of the element.</returns>
         </member>
-        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetWebElementLineNumbers(OpenQA.Selenium.IWebElement)">
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetLineHeight(OpenQA.Selenium.IWebElement)">
             <summary>
-            Gets the web element line numbers.
+            Gets the height of the line.
             </summary>
             <param name="element">The element.</param>
-            <returns>The webelemnt line numbers.</returns>
+            <returns></returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetElementHeight(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Gets the height of the element.
+            </summary>
+            <param name="element">The element.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetElementLineNumbers(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Gets the element line numbers.
+            </summary>
+            <param name="element">The element.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetCalculatedElementLineHeight(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Gets the calculated height of the element line.
+            </summary>
+            <param name="element">The element.</param>
+            <returns></returns>
         </member>
         <member name="M:Automation.WebDriverExtensions.ElementExtensions.GetClassName(OpenQA.Selenium.IWebElement)">
             <summary>
@@ -568,6 +589,158 @@
             <summary>
             Gets the PropertyValue.
             </summary>
+        </member>
+        <member name="P:Automation.WebDriverExtensions.ByProperty.BackgroundColor">
+            <summary>
+            Gets the color of the background.
+            </summary>
+            <value>
+            The color of the background.
+            </value>
+        </member>
+        <member name="P:Automation.WebDriverExtensions.ByProperty.Type">
+            <summary>
+            Gets the type.
+            </summary>
+            <value>
+            The type.
+            </value>
+        </member>
+        <member name="P:Automation.WebDriverExtensions.ByProperty.NgReflectSvgIcon">
+            <summary>
+            Gets the ng reflect SVG icon.
+            </summary>
+            <value>
+            The ng reflect SVG icon.
+            </value>
+        </member>
+        <member name="P:Automation.WebDriverExtensions.ByProperty.OffsetWidth">
+            <summary>
+            Gets the width of the offset.
+            </summary>
+            <value>
+            The width of the offset.
+            </value>
+        </member>
+        <member name="P:Automation.WebDriverExtensions.ByProperty.Color">
+            <summary>
+            Gets the color.
+            </summary>
+            <value>
+            The color.
+            </value>
+        </member>
+        <member name="P:Automation.WebDriverExtensions.ByProperty.BorderLeftColor">
+            <summary>
+            Gets the color of the border left.
+            </summary>
+            <value>
+            The color of the border left.
+            </value>
+        </member>
+        <member name="P:Automation.WebDriverExtensions.ByProperty.BorderRightColor">
+            <summary>
+            Gets the color of the border right.
+            </summary>
+            <value>
+            The color of the border right.
+            </value>
+        </member>
+        <member name="P:Automation.WebDriverExtensions.ByProperty.BorderBottomColor">
+            <summary>
+            Gets the color of the border bottom.
+            </summary>
+            <value>
+            The color of the border bottom.
+            </value>
+        </member>
+        <member name="P:Automation.WebDriverExtensions.ByProperty.BorderTopColor">
+            <summary>
+            Gets the color of the border top.
+            </summary>
+            <value>
+            The color of the border top.
+            </value>
+        </member>
+        <member name="P:Automation.WebDriverExtensions.ByProperty.StyleBackgroundColor">
+            <summary>
+            Gets the color of the style background.
+            </summary>
+            <value>
+            The color of the style background.
+            </value>
+        </member>
+        <member name="P:Automation.WebDriverExtensions.ByProperty.LineHeight">
+            <summary>
+            Gets the height of the line.
+            </summary>
+            <value>
+            The height of the line.
+            </value>
+        </member>
+        <member name="P:Automation.WebDriverExtensions.ByProperty.StyleLineHeight">
+            <summary>
+            Gets the height of the style line.
+            </summary>
+            <value>
+            The height of the style line.
+            </value>
+        </member>
+        <member name="P:Automation.WebDriverExtensions.ByProperty.OffsetHeight">
+            <summary>
+            Gets the height of the offset.
+            </summary>
+            <value>
+            The height of the offset.
+            </value>
+        </member>
+        <member name="P:Automation.WebDriverExtensions.ByProperty.MarginTop">
+            <summary>
+            Gets the margin top.
+            </summary>
+            <value>
+            The margin top.
+            </value>
+        </member>
+        <member name="P:Automation.WebDriverExtensions.ByProperty.StyleMarginTop">
+            <summary>
+            Gets the style margin top.
+            </summary>
+            <value>
+            The style margin top.
+            </value>
+        </member>
+        <member name="P:Automation.WebDriverExtensions.ByProperty.MarginBottom">
+            <summary>
+            Gets the margin bottom.
+            </summary>
+            <value>
+            The margin bottom.
+            </value>
+        </member>
+        <member name="P:Automation.WebDriverExtensions.ByProperty.StyleMarginBottom">
+            <summary>
+            Gets the style margin bottom.
+            </summary>
+            <value>
+            The style margin bottom.
+            </value>
+        </member>
+        <member name="P:Automation.WebDriverExtensions.ByProperty.MaxLength">
+            <summary>
+            Gets the maximum length.
+            </summary>
+            <value>
+            The maximum length.
+            </value>
+        </member>
+        <member name="P:Automation.WebDriverExtensions.ByProperty.MarginRight">
+            <summary>
+            Gets the margin right.
+            </summary>
+            <value>
+            The margin right.
+            </value>
         </member>
         <member name="T:Automation.Helpers.FiddlerHelper">
             <summary>

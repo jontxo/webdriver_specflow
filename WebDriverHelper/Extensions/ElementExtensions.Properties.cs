@@ -5,14 +5,10 @@
 
 namespace Automation.WebDriverExtensions
 {
+    using OpenQA.Selenium;
     using System;
-    using System.Collections.Generic;
     using System.Drawing;
     using System.Globalization;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-    using OpenQA.Selenium;
 
     /// <summary>
     /// WebDriver Extensions.
@@ -61,17 +57,62 @@ namespace Automation.WebDriverExtensions
         }
 
         /// <summary>
-        /// Gets the web element line numbers.
+        /// Gets the height of the line.
         /// </summary>
         /// <param name="element">The element.</param>
-        /// <returns>The webelemnt line numbers.</returns>
-        public static int GetWebElementLineNumbers(this IWebElement element)
+        /// <returns></returns>
+        public static int GetLineHeight(this IWebElement element)
+        {
+            var propertyFromComputedStyle = element.GetPropertyFromComputedStyle(ByProperty.LineHeight);
+            var lineHeight = propertyFromComputedStyle != null ? propertyFromComputedStyle : element.GetPropertyFromStyle(ByProperty.StyleLineHeight);
+            return Convert.ToInt32(lineHeight.Replace("px", string.Empty));
+        }
+
+        /// <summary>
+        /// Gets the height of the element.
+        /// </summary>
+        /// <param name="element">The element.</param>
+        /// <returns></returns>
+        public static int GetElementHeight(this IWebElement element)
+        {
+            var offsetHeight = Convert.ToInt32(element.GetElementProperties(ByProperty.OffsetHeight));
+            var marginTopFromComputedStyle = element.GetPropertyFromComputedStyle(ByProperty.MarginTop).Replace("px", string.Empty);
+            var marginTop = Convert.ToInt32((marginTopFromComputedStyle != null ? marginTopFromComputedStyle : element.GetPropertyFromStyle(ByProperty.StyleMarginTop)).Replace("px", string.Empty));
+            var marginBottomFromComputedStyle = element.GetPropertyFromComputedStyle(ByProperty.MarginBottom).Replace("px", string.Empty);
+            var marginBottom = Convert.ToInt32((marginBottomFromComputedStyle != null ? marginBottomFromComputedStyle : element.GetPropertyFromStyle(ByProperty.StyleMarginBottom)).Replace("px", string.Empty));
+            return offsetHeight + marginTop + marginBottom;
+        }
+
+        /// <summary>
+        /// Gets the element line numbers.
+        /// </summary>
+        /// <param name="element">The element.</param>
+        /// <returns></returns>
+        public static int GetElementLineNumbers(this IWebElement element)
+        {
+            var lineHeight = element.GetLineHeight() != 0 ? element.GetLineHeight() : element.GetCalculatedElementLineHeight();
+            var elementHeight = element.GetElementHeight();
+            return elementHeight / lineHeight;
+        }
+
+        /// <summary>
+        /// Gets the calculated height of the element line.
+        /// </summary>
+        /// <param name="element">The element.</param>
+        /// <returns></returns>
+        public static int GetCalculatedElementLineHeight(this IWebElement element)
         {
             var driver = element.GetWebDriver();
-            const string lineHeight = "window.getComputedStyle ? window.getComputedStyle(arguments[0], null).getPropertyValue('line-height') : arguments[0].style.lineHeight;";
-            const string script = "var lineHeight = parseInt(" + lineHeight + "); var elementHeight = arguments[0].offsetHeight; + var lines = elementHeight / lineHeight";
-            var lineNumber = element.GetJsScriptExecutor().ExecuteScript(script, element);
-            return Convert.ToInt32(lineNumber, new CultureInfo("es-ES"));
+            return Convert.ToInt32(element.GetJsScriptExecutor().ExecuteScript(
+                "clone = arguments[0].cloneNode(); " +
+                "clone.innerHTML = '<br>';" +
+                "clone.style.visibility = 'hidden';" +
+                "arguments[0].appendChild(clone); " +
+                "singleLineHeight = clone.offsetHeight;" +
+                "clone.innerHTML = '<br><br>';" +
+                "doubleLineHeight = clone.offsetHeight; " +
+                "arguments[0].removeChild(clone);" +
+                "var lineHeightCalculated = doubleLineHeight - singleLineHeight; return lineHeightCalculated", element));
         }
 
         /// <summary>
@@ -149,6 +190,22 @@ namespace Automation.WebDriverExtensions
                 myColor.G.ToString("X2", new CultureInfo("es-ES", false)) +
                 myColor.B.ToString("X2", new CultureInfo("es-ES", false));
             return hexValue;
+        }
+
+        private static string GetPropertyFromComputedStyle(this IWebElement element, ByProperty property)
+        {
+            var script = $"return window.getComputedStyle ? window.getComputedStyle(arguments[0], null).getPropertyValue('" + property.PropertyValue + "') : " +
+                "null;";
+            var result = element.GetJsScriptExecutor().ExecuteScript(script, element).ToString();
+            return result;
+        }
+
+        private static string GetPropertyFromStyle(this IWebElement element, ByProperty property)
+        {
+            var driver = element.GetWebDriver();
+            var script = $"return arguments[0].style." + property.PropertyValue + "; ";
+            var result = element.GetJsScriptExecutor().ExecuteScript(script, element).ToString();
+            return result;
         }
     }
 }

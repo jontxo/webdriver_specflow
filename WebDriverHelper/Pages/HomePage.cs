@@ -98,7 +98,7 @@ namespace Automation.Pages
         /// <returns>The number of lines of the webelement.</returns>
         public int GetElementLineNumbers()
         {
-            return this.textField.GetWebElementLineNumbers();
+            return this.textField.GetElementLineNumbers();
         }
     }
 }
