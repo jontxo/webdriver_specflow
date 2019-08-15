@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.136
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.62
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataFactory", "DataFactory\DataFactory.csproj", "{804F4525-2B8F-4F04-9DF4-1B0FD57B020E}"
 EndProject
@@ -127,8 +127,8 @@ Global
 		{3B57CCAC-FEE0-4ED6-892B-67A3BC210062}.ChromeDesktop|x64.Build.0 = ChromeDesktop|Any CPU
 		{3B57CCAC-FEE0-4ED6-892B-67A3BC210062}.ChromeDesktop|x86.ActiveCfg = ChromeDesktop|Any CPU
 		{3B57CCAC-FEE0-4ED6-892B-67A3BC210062}.ChromeDesktop|x86.Build.0 = ChromeDesktop|Any CPU
-		{3B57CCAC-FEE0-4ED6-892B-67A3BC210062}.Debug|Any CPU.ActiveCfg = ChromeAndroid7|Any CPU
-		{3B57CCAC-FEE0-4ED6-892B-67A3BC210062}.Debug|Any CPU.Build.0 = ChromeAndroid7|Any CPU
+		{3B57CCAC-FEE0-4ED6-892B-67A3BC210062}.Debug|Any CPU.ActiveCfg = ChromeDesktop|Any CPU
+		{3B57CCAC-FEE0-4ED6-892B-67A3BC210062}.Debug|Any CPU.Build.0 = ChromeDesktop|Any CPU
 		{3B57CCAC-FEE0-4ED6-892B-67A3BC210062}.Debug|x64.ActiveCfg = Debug|Any CPU
 		{3B57CCAC-FEE0-4ED6-892B-67A3BC210062}.Debug|x64.Build.0 = Debug|Any CPU
 		{3B57CCAC-FEE0-4ED6-892B-67A3BC210062}.Debug|x86.ActiveCfg = Debug|Any CPU
