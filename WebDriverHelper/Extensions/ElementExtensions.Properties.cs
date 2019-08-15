@@ -65,7 +65,7 @@ namespace Automation.WebDriverExtensions
         {
             var propertyFromComputedStyle = element.GetPropertyFromComputedStyle(ByProperty.LineHeight);
             var lineHeight = propertyFromComputedStyle != null ? propertyFromComputedStyle : element.GetPropertyFromStyle(ByProperty.StyleLineHeight);
-            return Convert.ToInt32(lineHeight.Replace("px", string.Empty));
+            return lineHeight.Equals("normal") ? 0 : Convert.ToInt32(lineHeight.Replace("px", string.Empty));
         }
 
         /// <summary>
@@ -90,7 +90,8 @@ namespace Automation.WebDriverExtensions
         /// <returns></returns>
         public static int GetElementLineNumbers(this IWebElement element)
         {
-            var lineHeight = element.GetLineHeight() != 0 ? element.GetLineHeight() : element.GetCalculatedElementLineHeight();
+            var elementLineHeight = element.GetLineHeight();
+            var lineHeight = elementLineHeight != 0 && !elementLineHeight.Equals("normal") ? elementLineHeight : element.GetCalculatedElementLineHeight();
             var elementHeight = element.GetElementHeight();
             return elementHeight / lineHeight;
         }
